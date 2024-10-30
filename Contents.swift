@@ -94,27 +94,4 @@ func divideNum3(_ dividend: Int, by divisor: Int) throws -> Int {
    return dividend / divisor
 }
 
-// Handling error using do-catch statement
-do {
 
-   // Using try? to convert errors to optional values
-   let output1 = try? divideNum3(21, by: 3)
-   let output2 = try? divideNum3(10, by: 0)
-    
-   // Checking if the operation was successful using optional binding
-   if let res = output1 {
-      print("Result of division: \(res)")
-   } else {
-      print("Found Error")
-   }
-
-   if let res = output2 {
-      print("Result of division: \(res)")
-   } else {
-      print("Found Error")
-   }
-} catch {
-
-   // Handling other errors if available
-   print("Found Error: \(error)")
-}
